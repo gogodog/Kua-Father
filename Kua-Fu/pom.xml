@@ -10,7 +10,6 @@
 	<profiles>
 		<profile>
 			<id>jdk-1.8</id>
-			<!-- 另外一种激活方式 -->
 			<activation>
 				<activeByDefault>true</activeByDefault>
 				<jdk>1.8</jdk>
@@ -22,15 +21,6 @@
 			</properties>
 		</profile>
 	</profiles>
-	<properties>
-		<!-- spring版本号 -->
-		<spring.version>4.0.2.RELEASE</spring.version>
-		<!-- mybatis版本号 -->
-		<mybatis.version>3.2.6</mybatis.version>
-		<!-- log4j日志文件管理包版本 -->
-		<slf4j.version>1.7.7</slf4j.version>
-		<log4j.version>1.2.17</log4j.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -73,8 +63,22 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
 	</dependencies>
-	<!-- log end -->
 	<build>
 		<finalName>Kua-Fu</finalName>
 		<plugins>
