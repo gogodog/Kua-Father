@@ -1,7 +1,4 @@
-/.settings/
-/target/
- 
-# built application files
+/lt application files
 *.apk
 *.ap_
  
@@ -20,4 +17,4 @@ gen/
 .classpath
 .project
 .DS_Store
-
+target/
